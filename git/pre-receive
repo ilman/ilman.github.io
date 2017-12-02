@@ -1,7 +1,8 @@
 #!/bin/bash
 
-folder=($(basename ${PWD%/*/*}))
+folder=($(basename ${PWD%/*}))
 cdate=($(date +"%Y%m%d-%H%M%S"))
 
 cd ../../../
-zip -r "$folder"-"$cdate".zip $folder
+zip -rq "$folder"-"$cdate".zip $folder
+echo "zip folder $folder done"
