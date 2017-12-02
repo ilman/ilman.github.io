@@ -3,6 +3,6 @@
 folder=($(basename ${PWD%/*}))
 cdate=($(date +"%Y%m%d-%H%M%S"))
 
-cd ../../../
+cd ../../
 zip -rq "$folder"-"$cdate".zip $folder
 echo "zip folder $folder done"
